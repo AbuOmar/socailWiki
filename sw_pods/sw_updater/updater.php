@@ -19,7 +19,7 @@ $POD->header();
 		foreach($wikis as $wiki){
 		
 		$curlPost = 'pNUMBER='  . urlencode($phoneNumber) . '&MESSAGE=' . urlencode($message) . '&SUBMIT=Send';
-		curl_setopt($ch, CURLOPT_URL, 'http://www.example.com/sendSMS.php');
+		curl_setopt($ch, CURLOPT_URL, 'http://test.php');
 		curl_setopt($ch, CURLOPT_HEADER, 1);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_GETFIELDS, $curlPost);
